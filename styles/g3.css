@@ -22,6 +22,10 @@
   color: #727272;
 
 }
+
+.color-primary{
+  color: #FF900E;
+}
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -123,8 +127,25 @@ main{
 /* responsive media query */
 
 @media screen and (max-width576px) {
-  .navbar, .navlink{
+  .navbar, 
+  .navlink,
+  .teams{
     flex-direction: column;
   }
-  
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-fuatures{
+    margin-left: 20px;
+  }
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-wodth:992) {
+  .teams{
+    flex-direction: column;
+  }
+  .team-fuatures{
+    margin: 50px auto;
+  }
 }
