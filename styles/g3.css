@@ -40,6 +40,13 @@
     border: none;
 
 }
+
+
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
 main > section{
   margin-top: 13px;
 }
@@ -110,10 +117,6 @@ main{
   max-width: 530px;
 }
 
-.fuatures-title{
-  font-size: 2.8rem;
-  font-weight: 700;
-}
 
 #quick-list{
   font-weight: 500;
@@ -121,8 +124,88 @@ main{
 #features{
   color: #FF900E;
 }
+/* futures styles */
+#features-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+.card-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.futures-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.features{
+  gap: 140px;
+}
 
+/* some  facts related styles */
+.facts-description {
+  max-weight: 540px;
+}
+.fact-card{
+  border: #FF900E solid 4px ;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* soncer related styles */
+
+.sponcor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponcor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponcor-companies img{
+  filter: grayscale(100%);
+}
+
+/* footer section  */
+
+.copywights-details{
+  text-align: center;
+  justify-content: center;
+ 
+}
+.copyright{
+  max-width: 1440px;
+  height: 70px;
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 8px;
+  align-items: center;
+  margin: 50px auto;
+}
 
 /* responsive media query */
 
@@ -132,8 +215,14 @@ main{
   .teams{
     flex-direction: column;
   }
-  .team-img-container{
+  .team-img-container, 
+  .facts-container,
+  .sponcor-companies{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .facts-container, {
+    justify-content: center;
+    gap: 24px;
   }
   .team-fuatures{
     margin-left: 20px;
@@ -141,6 +230,7 @@ main{
 }
 
 /* medium size device */
+
 @media screen and (min-width: 576px) and (max-wodth:992) {
   .teams{
     flex-direction: column;
